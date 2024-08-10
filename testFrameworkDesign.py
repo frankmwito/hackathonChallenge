@@ -17,3 +17,15 @@ class LoginPage:
 
 def take_screenshot(driver, name):
     driver.save_screenshot(f"{name}.png")
+# Reporting
+import unittest
+from xmlrunner import XMLTestRunner
+
+class Reporter:
+    def __init__(self, output_dir):
+        self.output_dir = output_dir
+
+    def run(self, test_suite):
+        with open(self.output_dir + '/report.xml', 'wb') as output:
+            runner = XMLTestRunner(output=output)
+            runner.run(test_suite)
