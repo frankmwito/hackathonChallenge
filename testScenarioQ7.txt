@@ -1,0 +1,85 @@
+# Test Scenario Development for E-Commerce Application
+
+POSITIVE Test CASES:
+#1.Test Case: Add a Single Item to the Cart
+
+Steps:
+Navigate to the e-commerce website.
+Search for a specific item.
+Select the item from the search results.
+Click "Add to Cart."
+Verify that the item is added to the cart with the correct details.
+Proceed to checkout.
+Expected Result: The item is successfully added to the cart, and the checkout page displays the correct item with accurate pricing.
+
+#2. Test case add Multiple Items to the Cart
+
+Steps:
+Navigate to the e-commerce website.
+Search for and select multiple items.
+Click "Add to Cart" for each item.
+Verify that all selected items are added to the cart.
+Proceed to checkout.
+Expected Result: All selected items are present in the cart with correct details, and the checkout process can be initiated successfully.
+
+#3. Test Case: Checkout with Discount Code
+
+Steps:
+Add items to the cart.
+Proceed to checkout.
+Enter a valid discount code.
+Verify the discount is applied.
+Complete the checkout process.
+Expected Result: The discount is applied correctly, and the order is placed successfully.
+
+#4. Test Case: Checkout with Different Payment Methods
+
+Steps:
+Add items to the cart.
+Proceed to checkout.
+Select different payment methods (Credit Card, PayPal, etc.).
+Complete the checkout process.
+Expected Result: The payment is processed successfully with the selected method, and the order confirmation is received.
+
+NEGATIVE TEST CASES:
+
+#1.Test Case: Add Out-of-Stock Item to Cart
+
+Steps:
+Navigate to the e-commerce website.
+Search for an item that is out of stock.
+Attempt to add the item to the cart.
+Expected Result: The user receives an error message indicating the item is out of stock, and the item is not added to the cart.
+
+#2.Test Case: Checkout with Invalid Credit Card Information
+
+Steps:
+Add items to the cart.
+Proceed to checkout.
+Enter invalid credit card information.
+Attempt to complete the payment.
+Expected Result: The payment is declined, and the user receives an error message to correct the payment details.
+
+#3.Test Case: Checkout with Expired Discount Code
+
+Steps:
+Add items to the cart.
+Proceed to checkout.
+Enter an expired discount code.
+Attempt to apply the code.
+Expected Result: The discount code is rejected, and the user is informed that the code has expired.
+
+#4.Test Case: Checkout with Insufficient Account Balance
+
+Steps:
+Add items to the cart.
+Proceed to checkout.
+Select a payment method with insufficient funds (e.g., a debit card with low balance).
+Attempt to complete the payment.
+Expected Result: The payment is declined, and the user receives an error message about insufficient funds.
+Test Case: Empty Cart Checkout Attempt
+
+Steps:
+Navigate to the checkout page without adding any items to the cart.
+Expected Result: The user receives a message indicating that the cart is empty and cannot proceed to checkout.
+
