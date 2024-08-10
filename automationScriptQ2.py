@@ -41,5 +41,4 @@ try:
         print("Test failed: Welcome message not found.")
 
 finally:
-    # Close the WebDriver
     driver.quit()
